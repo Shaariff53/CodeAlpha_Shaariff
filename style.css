@@ -28,7 +28,6 @@
       font-weight: 900;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
       letter-spacing: 1px;
-      -webkit-text-stroke: 0.3px #CDB49E;
     }
 
     .item {
@@ -86,16 +85,12 @@
       margin-bottom: 20px;
       font-weight: 800;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-      -webkit-text-stroke: 0.3px #AD7D56;
     }
 
     .hero h1 {
       font-size: 64px;
       font-weight: 800;
       line-height: 1.1;
-      letter-spacing: 2px;
-      -webkit-text-stroke: 0.5px #CDB49E;
-      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     }
 
     .hero h1 span {
@@ -235,8 +230,6 @@
   position: relative;
   font-weight: 900;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-  -webkit-text-stroke: 0.4px #CDB49E;
-  letter-spacing: 1px;
 }
 
 .About h2::after {
@@ -375,8 +368,6 @@
   margin-bottom: 6px;
   font-weight: 900;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  -webkit-text-stroke: 0.3px #CDB49E;
-  letter-spacing: 0.5px;
 }
 
 .timeline-item h4 {
@@ -426,7 +417,6 @@
   letter-spacing: 2px;
   font-weight: 900;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-  -webkit-text-stroke: 0.4px #CDB49E;
 }
 
 /* Grid */
@@ -542,8 +532,6 @@
   opacity: 0.8;
   transform: translateX(-15px);
   transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-  -webkit-text-stroke: 0.5px #AD7D56;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .project-card:hover .project-type {
@@ -559,8 +547,6 @@
   line-height: 1.3;
   transition: color 0.3s ease;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  -webkit-text-stroke: 0.3px #CDB49E;
-  letter-spacing: 0.5px;
 }
 
 .project-card:hover .project-content h3 {
@@ -649,7 +635,6 @@
   letter-spacing: 2px;
   font-weight: 900;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-  -webkit-text-stroke: 0.4px #CDB49E;
 }
 
 .contact-subtitle {
@@ -892,8 +877,6 @@
   margin-bottom: 10px;
   font-size: 1.2rem;
   font-weight: 900;
-  -webkit-text-stroke: 0.3px #AD7D56;
-  letter-spacing: 0.5px;
 }
 
 .skill-card p {
@@ -1342,74 +1325,5 @@
 }
 html {
   scroll-behavior: smooth;
-}
-
-/* Smooth Scroll Animation Keyframes */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-/* Smooth scroll animation for sections */
-.project-card,
-.skill-card,
-.timeline-item,
-.about-container,
-.contact-info {
-  will-change: transform, opacity;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-}
-
-/* Enhanced smooth transitions */
-.project-card,
-.skill-card {
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-/* Parallax support for smooth scrolling */
-@media (prefers-reduced-motion: no-preference) {
-  * {
-    scroll-behavior: smooth;
-  }
 }
 
